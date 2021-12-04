@@ -22,7 +22,7 @@ namespace aoc2021
 
             try
             {
-                Console.WriteLine("Testipath: "+dir);
+                //Console.WriteLine("Testipath: "+dir);
                 rawData = File.ReadAllLines(inputFileNames[fileNumber-1]).ToList();
             }
             catch (Exception e)

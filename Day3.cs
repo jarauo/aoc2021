@@ -28,7 +28,7 @@ namespace aoc2021
         {
             List<string> startData = new List<string>();
             startData.AddRange(data);
-            List<string> apulista = new List<string>();
+            List<string> helpList = new List<string>();
 
             string oxygen;
             string co2;
@@ -43,12 +43,12 @@ namespace aoc2021
                 {
                     if (startData[j][i] == filter1)
                     {
-                        apulista.Add(startData[j]);
+                        helpList.Add(startData[j]);
                     }
                 }
                 startData.Clear();
-                startData.AddRange(apulista);
-                apulista.Clear();
+                startData.AddRange(helpList);
+                helpList.Clear();
             }
 
             oxygen = startData[0];
@@ -69,13 +69,13 @@ namespace aoc2021
                 {
                     if (startData[j][i] == filter2)
                     {
-                        apulista.Add(startData[j]);
+                        helpList.Add(startData[j]);
                     }
                 }
 
                 startData.Clear();
-                startData.AddRange(apulista);
-                apulista.Clear();
+                startData.AddRange(helpList);
+                helpList.Clear();
 
             }
 
