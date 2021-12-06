@@ -8,7 +8,7 @@ namespace aoc2021
 {
     class Day1
     {
-        public static int[] data = InputFiles.ReadFiletoIntArray(1);
+        public static int[] data = InputFiles.ReadFileToIntArray(1);
 
         public static int Task1()
         {
